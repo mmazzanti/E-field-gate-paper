@@ -1,0 +1,154 @@
+\documentclass[aps,pra,twocolumn,superscriptaddress]{revtex4-2}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{natbib}
+\usepackage{hyperref}% add hypertext capabilities
+\usepackage{siunitx}
+%\usepackage[caption=false]{subfig}
+\usepackage{subcaption}%replaces subfig
+%\usepackage{caption}
+\usepackage[export]{adjustbox}
+\usepackage{upgreek} %upright greek letters
+\usepackage{xfrac} %small fractions
+\usepackage{physics}
+\usepackage{xcolor} %for inkscape colors
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+\usepackage{accents}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{booktabs}
+
+
+%%plotting packages and mods
+\usepackage{tikz-network} %for coupling graphs
+\SetVertexStyle[TextColor = white, TextFont = \tiny, LineWidth=0pt]
+\usepackage{tikz}
+\usepackage{pgfplots} % LaTeX
+\usepgfplotslibrary{colormaps} %colormaps
+\usepgfplotslibrary{groupplots} %grouplots
+\pgfplotsset{/pgfplots/colormap={PRGn}{rgb255(-1)=(64,0,75) rgb255(0)=(246,246,246) rgb255(1)=(0,68,27)}} %colormap for gradients
+\pgfplotsset{/pgfplots/colormap={seismic}{rgb255(-1)=(0,0,255) rgb255(0)=(255,255,255) rgb255(1)=(255,0,0)}} %color map for couplings
+\pgfplotsset{/pgfplots/colormap={errorPL}{rgb255(0)=(255,255,255) rgb255(0.46)=(0,255,0)}}
+\pgfplotsset{/pgfplots/colormap={errorPLres}{rgb255(0)=(255,255,255) rgb255(0.14)=(0,255,0)}}
+\pgfplotsset{/pgfplots/colormap={reds}{rgb255(0)=(255,255,255), rgb255(1)=(255,0,0)}}
+\pgfplotsset{/pgfplots/colormap={errorTL}{rgb255(0)=(255,255,255) rgb255(0.33)=(0,255,0)}}
+\pgfplotsset{/pgfplots/colormap={errorTLres}{rgb255(0)=(255,255,255) rgb255(0.1)=(0,255,0)}}
+
+%\usepgfplotslibrary{groupplots}
+%\pgfplotsset{compat = newest}
+\pgfplotsset{compat=1.17}
+\pgfkeys{/pgf/number format/.cd,1000 sep={}}
+
+%%read coordinates for 3D matrix
+\makeatletter
+\newcommand*\readcoords[1]{\@@input #1 }
+\makeatother
+
+%%make captions justified
+\captionsetup[subfigure]{justification = raggedright, singlelinecheck = false, position=top} %subcaptions on top lect corner
+\captionsetup{font=small, justification=Justified, format=plain,singlelinecheck = false} 
+\captionsetup[figure]{font=small,justification=Justified,format=plain}%captions on bottom left
+
+
+
+
+\begin{document}
+%% Custom commands
+
+\newcommand{\rg}[1]{{\textcolor{purple}{#1}}}
+\newcommand{\delete}[1]{{\textcolor{red}{#1}}}
+\newcommand{\ASN}[1]{{\color{red}{#1}}}
+\newcommand{\MM}[1]{{\textcolor{blue}{#1}}}
+\newcommand{\rs}[1]{{\textcolor{blue}{#1}}}
+
+
+
+\title{ }
+
+\author{J. D. Arias Espinoza}\affiliation{Van der Waals-Zeeman Institute, Institute of Physics, University of Amsterdam, 1098 XH Amsterdam, the Netherlands}
+\author{M. Mazzanti}\affiliation{Van der Waals-Zeeman Institute, Institute of Physics, University of Amsterdam, 1098 XH Amsterdam, the Netherlands}
+\author{K. Fouka}\affiliation{Van der Waals-Zeeman Institute, Institute of Physics, University of Amsterdam, 1098 XH Amsterdam, the Netherlands}
+\author{R. X. Sch{\"u}ssler}\affiliation{Van der Waals-Zeeman Institute, Institute of Physics, University of Amsterdam, 1098 XH Amsterdam, the Netherlands}
+\author{Z. Wu}\affiliation{Van der Waals-Zeeman Institute, Institute of Physics, University of Amsterdam, 1098 XH Amsterdam, the Netherlands}
+\author{P. Corboz}\affiliation{QuSoft, Science Park 123, 1098 XG Amsterdam, the Netherlands}\affiliation{Institute for Theoretical Physics, Institute of Physics, University of Amsterdam, Science Park 904, 1098 XH Amsterdam, the Netherlands}
+\author{R. Gerritsma}\affiliation{Van der Waals-Zeeman Institute, Institute of Physics, University of Amsterdam, 1098 XH Amsterdam, the Netherlands}
+\author{A. Safavi Naini}\affiliation{QuSoft, Science Park 123, 1098 XG Amsterdam, the Netherlands}\affiliation{Institute for Theoretical Physics, Institute of Physics, University of Amsterdam, Science Park 904, 1098 XH Amsterdam, the Netherlands}
+
+
+\begin{abstract}
+
+Ladies and gentlemen here's an electric field gate.
+
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+
+
+\section{section 2}
+
+
+
+
+\section{Section 3}
+
+
+
+\begin{comment}
+
+
+\end{comment}
+
+
+\section{Section 4}\label{sec:opt}
+
+
+
+
+\begin{comment}
+
+\end{comment}
+
+
+\section{Examples}
+
+
+
+\subsection{Subsection 1}
+
+
+
+
+
+
+
+
+\subsection{Subsection 2}
+
+
+
+\section{Section 4}
+
+
+\section{Discussion}
+
+\acknowledgements
+This work was supported by 
+
+\clearpage
+\appendix
+\section{Appendix 1}
+
+
+\bibliographystyle{apsrev4-2}
+\bibliography{TweezerIon}
+
+
+
+\end{document}
